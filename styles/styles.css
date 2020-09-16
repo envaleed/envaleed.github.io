@@ -93,6 +93,7 @@ a{
 
 .profile-1{
     grid-area: profile-1;
+    display:block;
     align-self: center;
     justify-self: center;
 }
@@ -123,8 +124,8 @@ a{
 /* Styling for the 1st picture*/
 
 #pic-1{
-    width: 128px;
-    height: 128px;
+    width: 312px;
+    height: 312px;
 }
 
 
@@ -166,8 +167,8 @@ a{
 }
 
 #pic-2{
-    width: 128px;
-    height: 128px;
+    width: 256px;
+    height: 256px;
 }
 
 .profile-2{
@@ -192,8 +193,11 @@ a{
 }
 
 button{
-    background-color: var(--boxes);
+    background-color: var(--social-color);
     font-family: 'Russo One', sans-serif;
+    border-radius: 30px;
+    padding: 10px;
+    width: 200px;
 }
 
 .knowledge{
