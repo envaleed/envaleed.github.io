@@ -1,138 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Home</title>
-	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&family=Space+Mono&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="/styles/styles.css">
-	<script src="https://kit.fontawesome.com/bc7ea5901c.js" crossorigin="anonymous"></script>
-</head>
-<body>
-	<div class="navigation">
-		<div class="logo">Welcome To My Portfolio</div>
-		<label for="hamburger">&#9776;</label>
-		<input type="checkbox" id="hamburger">
-		<nav>
-			<a href="#_about">About</a>
-			<a href="#_knowledge">Resume</a>
-			<a href="#_projects">Projects</a>
-			<a href="#_contact">Contact</a>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="/css/styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+		/>
+		<title>Document</title>
+	</head>
+	<body>
+		<nav
+			class="navbar navbar-light sticky-top navbar-expand-lg margin-space"
+			style="background-color: #6c63fe"
+		>
+			<div class="container-fluid w-75">
+				<a class="navbar-brand" href="#"
+					><img src="/img/logo.png" alt="" width="50" height="34"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="offcanvas"
+					data-bs-target="#offcanvasNavbar"
+					aria-controls="offcanvasNavbar"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div
+					class="offcanvas offcanvas-end"
+					tabindex="-1"
+					id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel"
+				>
+					<div class="offcanvas-header" style="background-color: #6c63fe">
+						<h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">
+							My Portfolio
+						</h5>
+						<button
+							type="button"
+							class="btn-close text-reset"
+							data-bs-dismiss="offcanvas"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="offcanvas-body" style="background-color: #6c63fe">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+							<li class="nav-item">
+								<a class="nav-link text-white" href="/index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#about">About</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#projects">Projects</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white" href="#contact">Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</nav>
-	</div>
-	<div class="main-container">
-		<section class="intro container">
-			<picture class="profile-1">
-				<img id="pic-1" src="/assets/undraw_version_control_9bpv.svg">
-			</picture>
-			<div class="intro-text">
-				<p>Hi my name is MARK-ANTHONY JONES.</p>
-				<p>I am a Jamaican Software Developer trained in Mobile and Web Applications Development in China.</p>
-				<div class="button-wrapper">
-					<p id="github"><a href="https://github.com/envaleed" target="_blank"><i class="fab fa-github"></i> Github</a></p>
-					<p id="linkedin"><a href="https://www.linkedin.com/in/mark-anthony-v-jones" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+		<div class="container-md">
+			<div class="container margin-1">
+				<div class="row">
+					<div class="col-12 col-lg-4 d-flex justify-content-end flex-column">
+						<h1 class="fs-5">Mark-Anthony Jones</h1>
+						<h2 class="mb-5">I am a Software Engineer based in Jamaica.</h2>
+						<a href="#contact"
+							><button
+								type="button"
+								class="btn btn-dark justify-self-lg-end col-6 offset-3 col-lg-4"
+							>
+								Contact Me
+							</button></a
+						>
+					</div>
+					<div class="col-12 col-lg-2"></div>
+					<div class="col-12 col-lg-5">
+						<img
+							src="/img/undraw_portfolio_website_lidw.svg"
+							alt="portfolio picture"
+							class="img-fluid"
+						/>
+					</div>
+					<div
+						class="
+							col-12 col-lg-1
+							d-flex d-lg-flex
+							flex-row flex-lg-column
+							align-items-lg-center
+							justify-content-lg-center justify-content-evenly
+						"
+					>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+						<a href="#"><i class="fa fa-github"></i></a>
+					</div>
 				</div>
 			</div>
-		</section>
-		<section class="about" id="_about">
-			<div class="window-buttons">
-				<div><i class="far fa-window-minimize"></i></div>
-				<div><i class="fas fa-window-restore"></i></div>
-				<div><i class="far fa-window-close"></i></div>
-			</div>
-			<div class="about-me">
-				<div class="about-text">
-					<header id="about-me-header">
-						<h1>About Me</h1>
-					</header>
-					<p>I am a professional developer with experience in creating websites and mobile applications. My main focus is developing APIs using Python and creating pages with HTML/CSS and JavaScript for websites and Java for the Android platform. </p>
-					<p>My passion is to create software solutions to maximize work efficiency in the modern world.</p>
+			<div class="w-50 mx-auto text-center" id="about">
+				<h3 class="margin-2">About Me</h3>
+				<p>
+					I am a Mobile and Web Developer who is interested in problem solving
+					and making data-driven applications.
+				</p>
+				<h3 class="margin-2">Technologies</h3>
+				<div>
+					<div
+						class="container-sm d-flex flex-wrap gap-5 justify-content-center"
+					>
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
+							width="75"
+							height="75"
+							class="img-fluid"
+						/>
+
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg"
+							width="75"
+							height="75"
+							class="img-fluid"
+						/>
+
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+							width="75"
+							height="75"
+							class="img-fluid"
+						/>
+
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+							width="75"
+							height="75"
+							class="img-fluid"
+						/>
+
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg"
+							width="75"
+							height="75"
+							class="img-fluid"
+						/>
+
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
+							width="75"
+							height="75"
+							class="img-fluid"
+						/>
+
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+							width="75"
+							height="75"
+							class="img-fluid"
+						/>
+
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+							width="75"
+							height="75"
+							class="img-fluid g-2"
+						/>
+
+						<img
+							src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original-wordmark.svg"
+							width="75"
+							height="75"
+							class="img-fluid"
+						/>
+					</div>
 				</div>
-				<picture class="profile-2">
-					<img id="pic-2" src="/assets/undraw_programming_2svr.svg">
-				</picture>
 			</div>
-			
-		</section>
-		<section class="skills container">
-			<div class="knowledge" id="_knowledge">
-				<h1>Knowledge Areas</h1>
-				<ul>
-					<li>HTML/CSS</li>
-					<li>JavaScript</li>
-					<li>Python</li>
-					<ul>
-						<li id="item">Django</li>
-						<li id="item">Flask</li>
-					</ul>
-					<li>MySQL</li>
-					<li>Java (Android)</li>
-				</ul>
+			<div id="projects" class="margin-2">
+				<h2 class="text-center margin-2">Projects</h2>
+				<div class="row row-cols-1 row-cols-md-3 g-4">
+					<div class="col">
+						<div class="card h-100">
+							<a href="https://github.com/pure-soul/EduShare" target="_blank"
+								><img
+									src="/img/undraw_Graduation_ktn0.svg"
+									class="card-img-top"
+									alt="..."
+							/></a>
+							<div class="card-body">
+								<h5 class="card-title">EduShare</h5>
+								<p class="card-text">
+									The software the bridges the gap between those who have
+									knowledge and those who seek knowledge.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<a
+								href="https://github.com/envaleed/twitter-clone"
+								target="_blank"
+								><img
+									src="/img/undraw_pcsocial_16rw.svg"
+									class="card-img-top"
+									alt="..."
+							/></a>
+							<div class="card-body">
+								<h5 class="card-title">Twitter Clone</h5>
+								<p class="card-text">
+									A clone of the famous Twitter social media website using
+									React, Material UI elements and Google Cloud Platform's
+									Firebase services.
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card h-100">
+							<a
+								href="https://github.com/SRKING96/Web-and-Mobile-Application-Dev-II"
+								target="_blank"
+								><img
+									src="/img/undraw_shopping_app_flsj.svg"
+									class="card-img-top"
+									alt="QuickKart App"
+							/></a>
+							<div class="card-body">
+								<h5 class="card-title">QuickKart</h5>
+								<p class="card-text">
+									The application that allows citizens to shop for items from
+									supermarkets in their areas from their mobile devices.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="resume">
-				<h1>Resume</h1>
-				<button><a href="/assets/Mark-Anthony Jones' Resume(v1.2).pdf" target="_blank">VIEW RESUME</a></button>
-			</div>
-			<div class="certifications">
-				<h1>Certifications</h1>
-				<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="9acf8e29-0ea0-4150-b0c1-8bb09f73ec6f" data-share-badge-host="https://www.youracclaim.com"></div><script type="text/javascript" async src="//cdn.youracclaim.com/assets/utilities/embed.js"></script>
-			</div>
-		</section>
-	</div>
-	<section class="projects" id="_projects">
-		<header>
-			<h1>My Projects</h1>
-		</header>
-		<div class="project-list">
-			<div class="project-1">
-				<a href="https://github.com/SRKING96/Web-and-Mobile-Application-Dev-II" target="_blank" class="card">
-					<picture class="thumbnail" style="background-image: url(/assets/undraw_shopping_app_flsj.svg);"></picture>
-					<article>
-						<h3>QuickKart</h3>
-						<p>The application that allows citizens to shop for items from supermarkets in their areas.</p>
-					</article>
-					<span>View on Github</span>
-				</a>
-			</div>
-			<div class="project-2">
-				<a href="https://github.com/pure-soul/EduShare" target="_blank" class="card">
-					<picture class="thumbnail" style="background-image: url(/assets/undraw_Graduation_ktn0.svg);"></picture>
-					<article>
-						<h3>EduShare</h3>
-						<p>The software the bridges the gap between those who have knowledge and those who seek knowledge.</p>
-					</article>
-					<span>View on Github</span>
-				</a>
-			</div>
-			<div class="project-3">
-				<a href="https://github.com/envaleed/envaleed.github.io" target="_blank" class="card">
-					<picture class="thumbnail" style="background-image: url(/assets/undraw_portfolio_website_lidw.svg);"></picture>
-					<article>
-						<h3>My Portfolio Page</h3>
-						<p>A showcase of who I am, my skills and personal and group projects.</p>
-					</article>
-					<span>View on Github</span>
-				</a>
-			</div>
-			<div class="project-4">
-				<a href="https://github.com/envaleed/twitter-clone" target="_blank" class="card">
-					<picture class="thumbnail" style="background-image: url(/assets/undraw_pcsocial_16rw.svg);"></picture>
-					<article>
-						<h3>Twitter Clone</h3>
-						<p>A clone of the famous Twitter social media website using React, Material UI elements and Google Cloud Platform's Firebase services.</p>
-					</article>
-					<span>View on Github</span>
-				</a>
+			<div class="w-50 mx-auto text-center" id="contact">
+				<h2 class="margin-2">Contact Me</h2>
+				<form>
+					<div class="mb-3">
+						<label for="exampleFormControlInput1" class="form-label"
+							>Email address</label
+						>
+						<input
+							type="email"
+							class="form-control"
+							id="exampleFormControlInput1"
+							placeholder="name@example.com"
+						/>
+					</div>
+					<div class="mb-3">
+						<label for="exampleFormControlTextarea1" class="form-label"
+							>Message</label
+						>
+						<textarea
+							class="form-control"
+							id="exampleFormControlTextarea1"
+							rows="3"
+						></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Send</button>
+				</form>
 			</div>
 		</div>
-	</section>
-	<section class="contact" id="_contact">
-		<div>
-			<h1>Contact Me</h1>
-			<a href="mailto: mark_2k9@live.com" id="email">Email: mark_2k9@live.com</a>
-			<p>Phone: +86 180-1812-4809</p>
-		</div>
-	</section>
-	
-</body>
+		<footer class="margin-3 py-5 text-white" style="background-color: #6c63fe">
+			<div class="row gx-0">
+				<div class="col-12 col-lg-3"></div>
+				<div class="col-12 col-lg-3"></div>
+				<div class="col-12 col-lg-3 p-0 text-center text-lg-start">
+					<a href="mailto:jmarkanthony.062@gmail.com"
+						><p>Email: jmarkanthony.062@gmail.com</p></a
+					>
+					<a href="tel:+18768583327"><p>Tel: +1(876)858-3327</p></a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="https://use.fontawesome.com/db7a9f9f70.js"></script>
+	</body>
 </html>
