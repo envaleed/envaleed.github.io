@@ -22,3 +22,10 @@ a{
 .margin-3{
     margin-top: 10rem;
 }
+
+.underline-style{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #5ed289;
+    text-decoration-thickness: 5px;
+}
