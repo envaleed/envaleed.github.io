@@ -2,6 +2,10 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: inherit;
     color: inherit;
@@ -12,11 +16,11 @@ a{
 }
 
 .margin-1{
-    margin: 15rem 0;
+    padding: 15rem 0;
 }
 
 .margin-2{
-    margin: 5rem 0;
+    padding: 5rem 0;
 }
 
 .margin-3{
@@ -28,4 +32,12 @@ a{
     text-decoration-style: solid;
     text-decoration-color: #5ed289;
     text-decoration-thickness: 5px;
+}
+
+.padding-v{
+    padding: 10rem 0 2rem 0;
+}
+
+.padding-d{
+    padding-bottom: 5rem;
 }
