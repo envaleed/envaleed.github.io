@@ -4,12 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta property="og:site_name" content="Mark-Anthony's Portfolio Website">
+		<meta property="og:site_name" content="Mark-Anthony's Portfolio Website" />
 		<meta property="og:title" content="Mark-Anthony's Portfolio Website" />
 		<meta property="og:url" content="https://mavjones.tech" />
 		<meta property="og:type" content="website" />
 		<meta
 			property="og:image"
+			itemprop="image"
 			content="https://res.cloudinary.com/dpquv5llu/image/upload/c_scale,h_630,w_1200/v1635867964/thumbnail_nbrxnw.png"
 		/>
 		<meta
@@ -28,6 +29,10 @@
 			content="Hello, I am a Software Engineer with experience building mobile and web apps. I'm also into Data Analysis as I believe data is the new currency of the modern age."
 		/>
 		<meta name="twitter:card" content="summary" />
+		<link
+			itemprop="thumbnailUrl"
+			href="https://res.cloudinary.com/dpquv5llu/image/upload/c_scale,h_630,w_1200/v1635867964/thumbnail_nbrxnw.png"
+		/>
 		<link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
 		<link rel="stylesheet" href="/css/font-awesome.min.css" />
 		<link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -45,6 +50,13 @@
 		<title>Portfolio Site | MAVJ</title>
 	</head>
 	<body>
+		<span
+			itemprop="image"
+			itemscope
+			itemtype="image/png"
+		>
+			<link itemprop="url" href="https://res.cloudinary.com/dpquv5llu/image/upload/c_scale,h_630,w_1200/v1635867964/thumbnail_nbrxnw.png" />
+		</span>
 		<nav
 			class="navbar navbar-light sticky-top navbar-expand-lg"
 			style="background-color: #6c63fe"
