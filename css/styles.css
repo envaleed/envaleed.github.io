@@ -1,43 +1,64 @@
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+	font-family: "Montserrat", sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
+.custom-shape-divider-top-1635960555 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
 
-a{
-    text-decoration: inherit;
-    color: inherit;
+.custom-shape-divider-top-1635960555 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 177px;
 }
 
-.padding-1{
-    padding: 50px 0;
+.custom-shape-divider-top-1635960555 .shape-fill {
+    fill: #fb809c;
 }
 
-.margin-1{
-    padding: 15rem 0;
+
+html {
+	scroll-behavior: smooth;
 }
 
-.margin-2{
-    padding: 5rem 0;
+a {
+	text-decoration: inherit;
+	color: inherit;
 }
 
-.margin-3{
-    margin-top: 10rem;
+.padding-1 {
+	padding: 50px 0;
 }
 
-.underline-style{
-    text-decoration-line: underline;
-    text-decoration-style: solid;
-    text-decoration-color: #5ed289;
-    text-decoration-thickness: 5px;
+.margin-1 {
+	padding: 15rem 0;
 }
 
-.padding-v{
-    padding: 10rem 0 2rem 0;
+.margin-2 {
+	padding: 5rem 0;
 }
 
-.padding-d{
-    padding-bottom: 5rem;
+.margin-3 {
+	margin-top: 10rem;
+}
+
+.underline-style {
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #5ed289;
+	text-decoration-thickness: 5px;
+}
+
+.padding-v {
+	padding: 10rem 0 2rem 0;
+}
+
+.padding-d {
+	padding-bottom: 5rem;
 }
